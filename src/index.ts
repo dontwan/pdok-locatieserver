@@ -13,7 +13,7 @@ function buildQueryString(options: Omit<ApiOptions, 'api'>): string {
 		if (Array.isArray(value)) {
 			value.forEach((value) => {
 				if (value) {
-					params.append(key, String(value));
+					params.append(key, key === 'type' ? `type=${value}` : String(value));
 				}
 			});
 		} else {
