@@ -1,6 +1,6 @@
 {
   "name": "pdok-locatieserver",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "keywords": [
     "pdok",
@@ -44,7 +44,8 @@
     "test:watch": "vitest watch",
     "test:coverage": "vitest run --coverage",
     "lint": "tsc --noEmit",
-    "prepublishOnly": "pnpm run lint && pnpm run test && pnpm run build"
+    "prepublishOnly": "pnpm run lint && pnpm run test && pnpm run build",
+    "release": "standard-version && git push --follow-tags && npm publish"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -58,6 +59,7 @@
     "globals": "^16.5.0",
     "jiti": "^2.6.1",
     "prettier": "^3.6.2",
+    "standard-version": "^9.5.0",
     "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.3",
