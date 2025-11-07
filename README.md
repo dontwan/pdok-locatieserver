@@ -99,8 +99,7 @@ interface Document {
 }
 ```
 
-Each subtype (AddressDocument, CityDocument, etc.) contains
-strongly typed fields such as straatnaam, woonplaatsnaam, postcode, and more.
+Each subtype (`AddressDocument`, `CityDocument`, etc.) contains strongly typed fields such as `straatnaam`, `woonplaatsnaam`, `postcode`, and more.
 
 ## 🧾 License
 
